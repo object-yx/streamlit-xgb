@@ -82,7 +82,7 @@ feature_values = [age, BMI, parity, vd, cs, mi, weight, drink, smoke, htn, dm, z
 features = np.array([feature_values])
 
 
-# In[17]:
+# In[19]:
 
 
 if st.button("预测"):
