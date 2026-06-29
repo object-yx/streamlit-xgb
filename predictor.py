@@ -90,7 +90,7 @@ if st.button("预测"):
     predicted_proba = model.predict_proba(features)[0]
     st.write(f"**预测结果为:**{predicted_class}(1:脱垂,0:正常)")
     st.write(f"**预测概率:**{predicted_proba}")
-    probability = predicted_proba[predicted_calss]*100
+    probability = predicted_proba[predicted_class]*100
     if predicted_class == 1:
         advice = (f"高风险"
                   f"盆腔器官脱垂的概率为{probability:1f}%")
