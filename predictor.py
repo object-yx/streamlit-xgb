@@ -83,7 +83,8 @@ features = np.array([feature_values])
 
 
 # In[19]:
-
+plt.rcParams["axes.unicode_minus"] = False
+plt.rcParams["font.family"] = "Microsoft YaHei"
 
 if st.button("预测"):
     predicted_class = model.predict(features)[0]
